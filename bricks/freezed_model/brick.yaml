@@ -1,0 +1,13 @@
+name: freezed_model
+description: A brick that generates a Dart data class with freezed.
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.35 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Name of the model
+    default: Counter Model
+    prompt: Please enter the model name.

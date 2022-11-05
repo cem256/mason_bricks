@@ -1,0 +1,6 @@
+name: clean_layers
+description: A brick that generates data, domain and presentation layers for clean architecture.
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.35 <0.1.0"

@@ -1,0 +1,5 @@
+# mason Files
+.mason/
+mason-lock.json
+
+.DS_Store

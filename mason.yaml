@@ -1,0 +1,9 @@
+bricks:
+  clean_layers:
+    path: bricks/clean_layers
+  context_extensions:
+    path: bricks/context_extensions
+  freezed_model:
+    path: bricks/freezed_model
+  freezed_bloc:
+    path: bricks/freezed_bloc
