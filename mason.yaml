@@ -1,4 +1,6 @@
 bricks:
+  app_bloc_observer:
+    path: bricks/app_bloc_observer
   clean_layers:
     path: bricks/clean_layers
   context_extensions:
