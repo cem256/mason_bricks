@@ -27,7 +27,6 @@ mason make app_bloc_observer
 ## Output 📦
 
 ```
-📦__brick__
- ┗ app_bloc_observer.dart
-
+📦app_bloc_observer
+ ┗ 📜app_bloc_observer.dart
 ```

@@ -30,9 +30,8 @@ mason make freezed_bloc
 ## Output 📦
 
 ```
-📦__brick__
+📦freezed_bloc
  ┣ 📜counter_bloc.dart
  ┣ 📜counter_event.dart
  ┗ 📜counter_state.dart
-
 ```

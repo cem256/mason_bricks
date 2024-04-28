@@ -2,7 +2,7 @@
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
-A brick that generates data, domain and presentation layers for clean architecture.
+A brick that generates data, domain and presentation layers for the given feature name and method name for clean architecture.
 
 ## How to use 🚀
 
@@ -24,21 +24,28 @@ mason make clean_layers
 ## Output 📦
 
 ```
-📦__brick__
+📦clean_layers
  ┣ 📂data
- ┃ ┣ 📂data_sources
- ┃ ┃ ┣ 📂local
+ ┃ ┣ 📂data_source
  ┃ ┃ ┗ 📂remote
+ ┃ ┃ ┃ ┗ 📜login_remote_data_source.dart
  ┃ ┣ 📂model
- ┃ ┗ 📂repositories
+ ┃ ┃ ┗ 📜.gitignore
+ ┃ ┗ 📂repository
+ ┃ ┃ ┗ 📜login_repository_impl.dart
  ┣ 📂domain
  ┃ ┣ 📂entities
- ┃ ┣ 📂repositories
+ ┃ ┃ ┗ 📜.gitignore
+ ┃ ┣ 📂repository
+ ┃ ┃ ┗ 📜login_repository.dart
  ┃ ┗ 📂use_cases
+ ┃ ┃ ┣ 📜.gitignore
+ ┃ ┃ ┗ 📜login_with_email_and_password_use_case.dart
  ┗ 📂presentation
- ┃ ┣ 📂bloc
- ┃ ┣ 📂view
- ┃ ┗ 📂widgets
-
+ ┃ ┣ 📂cubit
+ ┃ ┃ ┣ 📜login_cubit.dart
+ ┃ ┃ ┗ 📜login_state.dart
+ ┃ ┗ 📂view
+ ┃ ┃ ┗ 📜login_view.dart
 ```
 

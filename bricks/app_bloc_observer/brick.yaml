@@ -1,6 +1,6 @@
 name: app_bloc_observer
 description: A brick that generates bloc observer for your project.
-version: 0.1.0+1
+version: 0.2.0+2
 
 environment:
-  mason: ">=0.1.0-dev.35 <0.1.0"
+  mason: ^0.1.0-dev.52

@@ -1,6 +1,6 @@
 name: context_extensions
 description: A brick that generates useful context extensions for your project.
-version: 0.1.0+1
+version: 0.2.0+2
 
 environment:
-  mason: ">=0.1.0-dev.35 <0.1.0"
+  mason: ^0.1.0-dev.52

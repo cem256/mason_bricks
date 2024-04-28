@@ -30,8 +30,7 @@ mason make freezed_model
 ## Output 📦
 
 ```
-📦__freezed_model__
+📦freezed_model
  ┗ 📜counter_model.dart
-
 ```
 

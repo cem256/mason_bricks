@@ -25,7 +25,6 @@ mason make context_extensions
 ## Output 📦
 
 ```
-📦__brick__
+📦context_extensions
  ┗ 📜context_extensions.dart
-
 ```

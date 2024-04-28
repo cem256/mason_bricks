@@ -1,6 +1,18 @@
 name: clean_layers
 description: A brick that generates data, domain and presentation layers for clean architecture.
-version: 0.1.0+1
+version: 0.2.0+2
 
 environment:
-  mason: ">=0.1.0-dev.35 <0.1.0"
+  mason: ^0.1.0-dev.52
+
+vars:
+  feature_name:
+    type: string
+    description: Name of the feature
+    default: Login
+    prompt: Enter the name of the feature
+  method_name:
+    type: string
+    description: Name of the first method that you are going to implement
+    default: loginWithEmailAndPassword
+    prompt: Enter the name of the first method that you are going to implement
