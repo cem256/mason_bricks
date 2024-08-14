@@ -11,5 +11,6 @@ The set of bricks I use to speed up the development process.
 - [app_bloc_observer](https://github.com/cem256/mason_bricks/tree/master/bricks/app_bloc_observer)
 - [clean_layers](https://github.com/cem256/mason_bricks/tree/master/bricks/clean_layers)
 - [context_extensions](https://github.com/cem256/mason_bricks/tree/master/bricks/context_extensions)
+- [flutter_module](https://github.com/cem256/mason_bricks/tree/master/bricks/flutter_module)
 - [freezed_bloc](https://github.com/cem256/mason_bricks/tree/master/bricks/freezed_bloc)
 - [freezed_model](https://github.com/cem256/mason_bricks/tree/master/bricks/freezed_model)

@@ -1,0 +1,32 @@
+name: {{module_name.snakeCase()}}
+description: A new Flutter package project.
+
+publish_to: "none"
+
+version: 0.0.1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  auto_route: 9.2.1+1
+  equatable: 2.0.5
+  flutter_bloc: 8.1.6
+  fpdart: 1.1.0
+  freezed_annotation: 2.4.4
+  hive_flutter: 1.1.0
+  json_annotation: 4.9.0
+  slang: 3.31.1
+  slang_flutter: 3.31.0
+
+dev_dependencies:
+  auto_route_generator: 9.0.0
+  bloc_test: 9.1.7
+  build_runner: 2.4.11
+  flutter_test:
+    sdk: flutter
+  freezed: 2.5.2
+  hive_generator: 2.0.1
+  json_serializable: ^6.8.0
+
+flutter:

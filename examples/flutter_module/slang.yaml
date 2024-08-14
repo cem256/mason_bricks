@@ -1,0 +1,6 @@
+base_locale: en
+input_directory: lib/core/i18n
+class_name: FlutterModuleInheritedTranslations
+translate_var: FlutterModuleTranslations
+translation_class_visibility: private
+enum_name: AppLocale

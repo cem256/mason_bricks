@@ -1,0 +1,13 @@
+name: flutter_module
+description: A brick that generates a new Flutter module(package) with the given name.
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0-dev.52
+
+vars:
+  module_name:
+    type: string
+    description: Name of the module
+    default: Example
+    prompt: Please enter the module name.

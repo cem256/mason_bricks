@@ -5,6 +5,8 @@ bricks:
     path: bricks/clean_layers
   context_extensions:
     path: bricks/context_extensions
+  flutter_module:
+    path: bricks/flutter_module
   freezed_model:
     path: bricks/freezed_model
   freezed_bloc:
