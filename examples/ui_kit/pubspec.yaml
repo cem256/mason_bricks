@@ -1,0 +1,23 @@
+name: ui_kit
+description: "A Flutter package for UI components."
+version: 0.0.1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  skeletonizer: ^1.4.2
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  #Linter
+  very_good_analysis: ^6.0.0
+
+flutter:
+  uses-material-design: true

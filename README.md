@@ -14,3 +14,4 @@ The set of bricks I use to speed up the development process.
 - [flutter_module](https://github.com/cem256/mason_bricks/tree/master/bricks/flutter_module)
 - [freezed_bloc](https://github.com/cem256/mason_bricks/tree/master/bricks/freezed_bloc)
 - [freezed_model](https://github.com/cem256/mason_bricks/tree/master/bricks/freezed_model)
+- [ui_kit](https://github.com/cem256/mason_bricks/tree/master/bricks/ui_kit)

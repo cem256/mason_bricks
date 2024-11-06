@@ -11,3 +11,5 @@ bricks:
     path: bricks/freezed_model
   freezed_bloc:
     path: bricks/freezed_bloc
+  ui_kit:
+    path: bricks/ui_kit
