@@ -36,67 +36,67 @@ class UIKitPadding extends EdgeInsetsDirectional {
   /// Padding all 40
   const UIKitPadding.all40() : super.all(40);
 
-  /// Padding Horizonal Symmetric
-  /// Padding Horizonal Symmetric 4
-  const UIKitPadding.horizontalSymmetric4() : super.symmetric(horizontal: 4);
+  /// Padding Horizonal
+  /// Padding Horizonal 4
+  const UIKitPadding.horizontal4() : super.symmetric(horizontal: 4);
 
-  /// Padding Horizonal Symmetric 8
-  const UIKitPadding.horizontalSymmetric8() : super.symmetric(horizontal: 8);
+  /// Padding Horizonal 8
+  const UIKitPadding.horizontal8() : super.symmetric(horizontal: 8);
 
-  /// Padding Horizonal Symmetric 12
-  const UIKitPadding.horizontalSymmetric12() : super.symmetric(horizontal: 12);
+  /// Padding Horizonal 12
+  const UIKitPadding.horizontal12() : super.symmetric(horizontal: 12);
 
-  /// Padding Horizonal Symmetric 16
-  const UIKitPadding.horizontalSymmetric16() : super.symmetric(horizontal: 16);
+  /// Padding Horizonal 16
+  const UIKitPadding.horizontal16() : super.symmetric(horizontal: 16);
 
-  /// Padding Horizonal Symmetric 20
-  const UIKitPadding.horizontalSymmetric20() : super.symmetric(horizontal: 20);
+  /// Padding Horizonal 20
+  const UIKitPadding.horizontal20() : super.symmetric(horizontal: 20);
 
-  /// Padding Horizonal Symmetric 24
-  const UIKitPadding.horizontalSymmetric24() : super.symmetric(horizontal: 24);
+  /// Padding Horizonal 24
+  const UIKitPadding.horizontal24() : super.symmetric(horizontal: 24);
 
-  /// Padding Horizonal Symmetric 28
-  const UIKitPadding.horizontalSymmetric28() : super.symmetric(horizontal: 28);
+  /// Padding Horizonal 28
+  const UIKitPadding.horizontal28() : super.symmetric(horizontal: 28);
 
-  /// Padding Horizonal Symmetric 32
-  const UIKitPadding.horizontalSymmetric32() : super.symmetric(horizontal: 32);
+  /// Padding Horizonal 32
+  const UIKitPadding.horizontal32() : super.symmetric(horizontal: 32);
 
-  /// Padding Horizonal Symmetric 36
-  const UIKitPadding.horizontalSymmetric36() : super.symmetric(horizontal: 36);
+  /// Padding Horizonal 36
+  const UIKitPadding.horizontal36() : super.symmetric(horizontal: 36);
 
-  /// Padding Horizonal Symmetric 40
-  const UIKitPadding.horizontalSymmetric40() : super.symmetric(horizontal: 40);
+  /// Padding Horizonal 40
+  const UIKitPadding.horizontal40() : super.symmetric(horizontal: 40);
 
-  /// Padding Vertical Symmetric
-  /// Padding Vertical Symmetric 4
-  const UIKitPadding.verticalSymmetric4() : super.symmetric(vertical: 4);
+  /// Padding Vertical
+  /// Padding Vertical 4
+  const UIKitPadding.vertical4() : super.symmetric(vertical: 4);
 
-  /// Padding Vertical Symmetric 8
-  const UIKitPadding.verticalSymmetric8() : super.symmetric(vertical: 8);
+  /// Padding Vertical 8
+  const UIKitPadding.vertical8() : super.symmetric(vertical: 8);
 
-  /// Padding Vertical Symmetric 12
-  const UIKitPadding.verticalSymmetric12() : super.symmetric(vertical: 12);
+  /// Padding Vertical 12
+  const UIKitPadding.vertical12() : super.symmetric(vertical: 12);
 
-  /// Padding Vertical Symmetric 16
-  const UIKitPadding.verticalSymmetric16() : super.symmetric(vertical: 16);
+  /// Padding Vertical 16
+  const UIKitPadding.vertical16() : super.symmetric(vertical: 16);
 
-  /// Padding Vertical Symmetric 20
-  const UIKitPadding.verticalSymmetric20() : super.symmetric(vertical: 20);
+  /// Padding Vertical 20
+  const UIKitPadding.vertical20() : super.symmetric(vertical: 20);
 
-  /// Padding Vertical Symmetric 24
-  const UIKitPadding.verticalSymmetric24() : super.symmetric(vertical: 24);
+  /// Padding Vertical 24
+  const UIKitPadding.vertical24() : super.symmetric(vertical: 24);
 
-  /// Padding Vertical Symmetric 28
-  const UIKitPadding.verticalSymmetric28() : super.symmetric(vertical: 28);
+  /// Padding Vertical 28
+  const UIKitPadding.vertical28() : super.symmetric(vertical: 28);
 
-  /// Padding Vertical Symmetric 32
-  const UIKitPadding.verticalSymmetric32() : super.symmetric(vertical: 32);
+  /// Padding Vertical 32
+  const UIKitPadding.vertical32() : super.symmetric(vertical: 32);
 
-  /// Padding Vertical Symmetric 36
-  const UIKitPadding.verticalSymmetric36() : super.symmetric(vertical: 36);
+  /// Padding Vertical 36
+  const UIKitPadding.vertical36() : super.symmetric(vertical: 36);
 
-  /// Padding Vertical Symmetric 40
-  const UIKitPadding.verticalSymmetric40() : super.symmetric(vertical: 40);
+  /// Padding Vertical 40
+  const UIKitPadding.vertical40() : super.symmetric(vertical: 40);
 
   /// Padding Only Start
   /// Padding Only Start 4
