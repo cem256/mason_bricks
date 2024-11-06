@@ -1,7 +1,7 @@
 name: ui_kit
 description: A brick that generates a Flutter package for UI components.
 
-version: 0.1.0+1
+version: 0.1.1+2
 
 environment:
   mason: ^0.1.0-dev.60
