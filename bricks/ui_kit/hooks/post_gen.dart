@@ -7,6 +7,7 @@ Future<void> run(HookContext context) async {
     "ui_kit/test/",
     "ui_kit/pubspec.yaml",
     "ui_kit/analysis_options.yaml",
+    "ui_kit/README.md",
   ];
 
   final List<Map<String, String>> filesToCopy = [
@@ -14,6 +15,7 @@ Future<void> run(HookContext context) async {
     {"source": "scripts", "destination": "ui_kit/"},
     {"source": "pubspec.yaml", "destination": "ui_kit/"},
     {"source": "analysis_options.yaml", "destination": "ui_kit/"},
+    {"source": "README.md", "destination": "ui_kit/"},
   ];
 
   await _copyFiles(context, foldersToRemove, filesToCopy);
