@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_kit/theme/color/ui_kit_colors.dart';
+import 'package:{{class_name.snakeCase()}}/theme/color/{{class_name.snakeCase()}}_colors.dart';
 
-final class UIKitDarkColors implements UIKitColors {
+final class {{class_name.pascalCase()}}DarkColors implements {{class_name.pascalCase()}}Colors {
   // TODO: Customize colors
 
   @override

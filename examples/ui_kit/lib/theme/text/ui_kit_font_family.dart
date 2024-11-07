@@ -1,7 +1,7 @@
 // TODO: Add your font family here
-enum UIKitFontFamily {
+enum UiKitFontFamily {
   roboto('Roboto');
 
-  const UIKitFontFamily(this.name);
+  const UiKitFontFamily(this.name);
   final String name;
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class UIKitSvgPicture extends StatelessWidget {
-  const UIKitSvgPicture(
+class {{class_name.pascalCase()}}SvgPicture extends StatelessWidget {
+  const {{class_name.pascalCase()}}SvgPicture(
     this.assetName, {
     super.key,
     this.color,

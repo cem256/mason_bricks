@@ -3,10 +3,10 @@ import 'dart:ui' as ui show FontFeature, FontVariation, Shadow, TextLeadingDistr
 import 'package:flutter/material.dart';
 import 'package:ui_kit/ui_kit.dart';
 
-class UIKitText extends Text {
-  const UIKitText(super.data, {super.key});
+class UiKitText extends Text {
+  const UiKitText(super.data, {super.key});
 
-  UIKitText.displayLarge(
+  UiKitText.displayLarge(
     BuildContext context,
     super.data, {
     super.key,
@@ -25,8 +25,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -44,7 +44,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.displayLarge(
+          style: UiKitTextStyle.displayLarge(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -73,7 +73,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.displayMedium(
+  UiKitText.displayMedium(
     BuildContext context,
     super.data, {
     super.key,
@@ -92,8 +92,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -111,7 +111,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.displayMedium(
+          style: UiKitTextStyle.displayMedium(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -140,7 +140,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.displaySmall(
+  UiKitText.displaySmall(
     BuildContext context,
     super.data, {
     super.key,
@@ -159,8 +159,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -178,7 +178,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.displaySmall(
+          style: UiKitTextStyle.displaySmall(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -207,7 +207,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.headlineLarge(
+  UiKitText.headlineLarge(
     BuildContext context,
     super.data, {
     super.key,
@@ -226,8 +226,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -245,7 +245,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.headlineLarge(
+          style: UiKitTextStyle.headlineLarge(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -274,7 +274,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.headlineMedium(
+  UiKitText.headlineMedium(
     BuildContext context,
     super.data, {
     super.key,
@@ -293,8 +293,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -312,7 +312,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.headlineMedium(
+          style: UiKitTextStyle.headlineMedium(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -341,7 +341,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.headlineSmall(
+  UiKitText.headlineSmall(
     BuildContext context,
     super.data, {
     super.key,
@@ -360,8 +360,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -379,7 +379,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.headlineSmall(
+          style: UiKitTextStyle.headlineSmall(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -408,7 +408,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.titleLarge(
+  UiKitText.titleLarge(
     BuildContext context,
     super.data, {
     super.key,
@@ -427,8 +427,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -446,7 +446,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.titleLarge(
+          style: UiKitTextStyle.titleLarge(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -475,7 +475,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.titleMedium(
+  UiKitText.titleMedium(
     BuildContext context,
     super.data, {
     super.key,
@@ -494,8 +494,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -513,7 +513,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.titleMedium(
+          style: UiKitTextStyle.titleMedium(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -542,7 +542,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.titleSmall(
+  UiKitText.titleSmall(
     BuildContext context,
     super.data, {
     super.key,
@@ -561,8 +561,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -580,7 +580,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.titleSmall(
+          style: UiKitTextStyle.titleSmall(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -609,7 +609,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.labelLarge(
+  UiKitText.labelLarge(
     BuildContext context,
     super.data, {
     super.key,
@@ -628,8 +628,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -647,7 +647,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.labelLarge(
+          style: UiKitTextStyle.labelLarge(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -676,7 +676,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.labelMedium(
+  UiKitText.labelMedium(
     BuildContext context,
     super.data, {
     super.key,
@@ -695,8 +695,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -714,7 +714,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.labelMedium(
+          style: UiKitTextStyle.labelMedium(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -743,7 +743,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.labelSmall(
+  UiKitText.labelSmall(
     BuildContext context,
     super.data, {
     super.key,
@@ -762,8 +762,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -781,7 +781,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.labelSmall(
+          style: UiKitTextStyle.labelSmall(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -810,7 +810,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.bodyLarge(
+  UiKitText.bodyLarge(
     BuildContext context,
     super.data, {
     super.key,
@@ -829,8 +829,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -848,7 +848,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.bodyLarge(
+          style: UiKitTextStyle.bodyLarge(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -877,7 +877,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.bodyMedium(
+  UiKitText.bodyMedium(
     BuildContext context,
     super.data, {
     super.key,
@@ -896,8 +896,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -915,7 +915,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.bodyMedium(
+          style: UiKitTextStyle.bodyMedium(
             context,
             color: color,
             fontStyle: fontStyle,
@@ -944,7 +944,7 @@ class UIKitText extends Text {
           textScaler: textScaleFactor != null ? TextScaler.linear(textScaleFactor) : null,
         );
 
-  UIKitText.bodySmall(
+  UiKitText.bodySmall(
     BuildContext context,
     super.data, {
     super.key,
@@ -963,8 +963,8 @@ class UIKitText extends Text {
     super.textHeightBehavior,
     double? textScaleFactor,
     super.textWidthBasis,
-    UIKitFontWeight? fontWeight,
-    UIKitFontFamily? fontFamily,
+    UiKitFontWeight? fontWeight,
+    UiKitFontFamily? fontFamily,
     bool? inherit,
     Color? backgroundColor,
     double? letterSpacing,
@@ -982,7 +982,7 @@ class UIKitText extends Text {
     double? decorationThickness,
     String? debugLabel,
   }) : super(
-          style: UIKitTextStyle.bodySmall(
+          style: UiKitTextStyle.bodySmall(
             context,
             color: color,
             fontStyle: fontStyle,

@@ -2,23 +2,26 @@ import 'dart:io';
 import 'package:mason/mason.dart';
 
 Future<void> run(HookContext context) async {
-  final progress = context.logger.progress("Running 'flutter create --template=package'");
+  String className = context.vars["class_name"];
+  className = className.snakeCase;
+
+  final progress = context.logger.progress("Running 'flutter create --template=package $className'");
 
   try {
-    await _createFlutterApp(context);
-    progress.complete("Flutter package created!");
+    await _createFlutterPackage(context, className);
+    progress.complete("Flutter package $className created!");
   } catch (e) {
-    progress.fail("Something went wrong while creating the Flutter package : $e");
+    progress.fail("Something went wrong while creating the Flutter package $className : $e");
   }
 }
 
-Future<ProcessResult> _createFlutterApp(HookContext context) async {
+Future<ProcessResult> _createFlutterPackage(HookContext context, String className) async {
   return Process.run(
     "flutter",
     [
       "create",
       "--template=package",
-      "ui_kit",
+      className,
     ],
   );
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit/theme/color/ui_kit_colors.dart';
 
-final class UIKitDarkColors implements UIKitColors {
+final class UiKitDarkColors implements UiKitColors {
   // TODO: Customize colors
 
   @override

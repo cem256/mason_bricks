@@ -1,4 +1,4 @@
-export 'ui_kit_font_family.dart';
-export 'ui_kit_font_weight.dart';
-export 'ui_kit_text.dart';
-export 'ui_kit_text_style.dart';
+export '{{class_name.snakeCase()}}_font_family.dart';
+export '{{class_name.snakeCase()}}_font_weight.dart';
+export '{{class_name.snakeCase()}}_text.dart';
+export '{{class_name.snakeCase()}}_text_style.dart';

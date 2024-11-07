@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
-class UIKitSkeletonizer extends StatelessWidget {
-  const UIKitSkeletonizer({
+class {{class_name.pascalCase()}}Skeletonizer extends StatelessWidget {
+  const {{class_name.pascalCase()}}Skeletonizer({
     required this.child,
     super.key,
     this.enabled = true,
