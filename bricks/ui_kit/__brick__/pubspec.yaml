@@ -1,4 +1,4 @@
-name: ui_kit
+name: {{class_name.snakeCase()}}
 description: "A Flutter package for UI components."
 version: 0.0.1
 

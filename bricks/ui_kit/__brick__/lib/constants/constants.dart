@@ -1,1 +1,1 @@
-export 'ui_kit_constants.dart';
+export '{{class_name.snakeCase()}}_constants.dart';

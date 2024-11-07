@@ -1,2 +1,2 @@
-export 'ui_kit_h_gap.dart';
-export 'ui_kit_v_gap.dart';
+export '{{class_name.snakeCase()}}_h_gap.dart';
+export '{{class_name.snakeCase()}}_v_gap.dart';

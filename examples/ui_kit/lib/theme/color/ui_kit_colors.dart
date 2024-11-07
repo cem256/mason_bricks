@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract interface class UIKitColors {
+abstract interface class UiKitColors {
   Color get primary;
   Color get onPrimary;
   Color get secondary;

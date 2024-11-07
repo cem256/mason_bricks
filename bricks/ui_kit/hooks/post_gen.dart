@@ -2,24 +2,29 @@ import 'dart:io';
 import 'package:mason/mason.dart';
 
 Future<void> run(HookContext context) async {
+  String className = context.vars["class_name"];
+  className = className.snakeCase;
+
   final List<String> foldersToRemove = [
-    "ui_kit/lib/",
-    "ui_kit/test/",
-    "ui_kit/pubspec.yaml",
-    "ui_kit/analysis_options.yaml",
-    "ui_kit/README.md",
+    "$className/lib/",
+    "$className/test/",
+    "$className/pubspec.yaml",
+    "$className/analysis_options.yaml",
+    "$className/README.md",
+    "$className/CHANGELOG.md",
   ];
 
   final List<Map<String, String>> filesToCopy = [
-    {"source": "lib", "destination": "ui_kit/"},
-    {"source": "scripts", "destination": "ui_kit/"},
-    {"source": "pubspec.yaml", "destination": "ui_kit/"},
-    {"source": "analysis_options.yaml", "destination": "ui_kit/"},
-    {"source": "README.md", "destination": "ui_kit/"},
+    {"source": "lib", "destination": "$className/"},
+    {"source": "scripts", "destination": "$className/"},
+    {"source": "pubspec.yaml", "destination": "$className/"},
+    {"source": "analysis_options.yaml", "destination": "$className/"},
+    {"source": "README.md", "destination": "$className/"},
+    {"source": "CHANGELOG.md", "destination": "$className/"},
   ];
 
   await _copyFiles(context, foldersToRemove, filesToCopy);
-  await _runFlutterPubGet(context);
+  await _runFlutterPubGet(context, className);
 }
 
 Future<void> _copyFiles(
@@ -44,9 +49,9 @@ Future<void> _copyFiles(
   }
 }
 
-Future<void> _runFlutterPubGet(HookContext context) async {
+Future<void> _runFlutterPubGet(HookContext context, String className) async {
   final flutterPubGetProgress = context.logger.progress("Running pub get script");
-  final result = await Process.start("sh", ["scripts/pub_get.sh"], workingDirectory: "./ui_kit");
+  final result = await Process.start("sh", ["scripts/pub_get.sh"], workingDirectory: className);
 
   final exitCode = await result.exitCode;
 

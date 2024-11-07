@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 ///  medium = w500
 ///  semibold = w600
 ///  bold = w700
-enum UIKitFontWeight {
+enum UiKitFontWeight {
   /// light = w300
   light(FontWeight.w300),
 
@@ -21,6 +21,6 @@ enum UIKitFontWeight {
   /// bold = w700
   bold(FontWeight.w700);
 
-  const UIKitFontWeight(this.rawValue);
+  const UiKitFontWeight(this.rawValue);
   final FontWeight rawValue;
 }

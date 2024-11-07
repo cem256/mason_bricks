@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit/theme/color/ui_kit_colors.dart';
 
-final class UIKitLightColors implements UIKitColors {
+final class UiKitLightColors implements UiKitColors {
   // TODO: Customize colors
   @override
   Color get primary => const Color(0xFF007AFF); // Bright Blue

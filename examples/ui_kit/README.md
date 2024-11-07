@@ -1,4 +1,4 @@
-# UI Kit
+# UiKit
 
 A Flutter package that helps you build consistent user interfaces with predefined components and layout utilities.
 
@@ -11,19 +11,19 @@ A Flutter package that helps you build consistent user interfaces with predefine
 ## Available Classes
 
 #### Theme Extensions
-- `UIKitColors` - Customizable color palette for the application
-- `UIKitFontWeight` - Predefined font weights (light, regular, medium, semiBold, bold)
+- `UiKitColors` - Customizable color palette for the application
+- `UiKitFontWeight` - Predefined font weights (light, regular, medium, semiBold, bold)
 
 #### Layout Components
-- `UIKitVGap` - Vertical spacing utility (v0, v4, v8, v12, v16 up to v40)
-- `UIKitHGap` - Horizontal spacing utility (v0, v4, v8, v12, v16 up to h40)
-- `UIKitPadding` - Padding utility
+- `UiKitVGap` - Vertical spacing utility (v0, v4, v8, v12, v16 up to v40)
+- `UiKitHGap` - Horizontal spacing utility (v0, v4, v8, v12, v16 up to h40)
+- `UiKitPadding` - Padding utility
   - Padding on all sides (all4, all8, all12, up to all40)
   - Horizontal padding only (horizontal4, horizontal8, horizontal12, up to horizontal40)
   - Vertical padding only (vertical4, vertical8, vertical12, up to vertical40)
 
 #### Typography
-- `UIKitText` - Text styles utility
+- `UiKitText` - Text styles utility
   - `displayLarge` - Largest display text
   - `displayMedium` - Medium display text
   - `displaySmall` - Small display text
@@ -52,19 +52,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.light,
-        fontFamily: UIKitFontFamily.roboto.name,
+        fontFamily: UiKitFontFamily.roboto.name,
         extensions: [
-          UIKitThemeExtensions(
-            colors: UIKitLightColors(),
+          UiKitThemeExtensions(
+            colors: UiKitLightColors(),
           ),
         ],
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        fontFamily: UIKitFontFamily.roboto.name,
+        fontFamily: UiKitFontFamily.roboto.name,
         extensions: [
-          UIKitThemeExtensions(
-            colors: UIKitDarkColors(),
+          UiKitThemeExtensions(
+            colors: UiKitDarkColors(),
           ),
         ],
       ),
@@ -79,30 +79,30 @@ class MyApp extends StatelessWidget {
 
 ```dart
 Padding(
-  // Use UIKitPadding to set the padding
-  padding: const UIKitPadding.horizontal16(),
+  // Use UiKitPadding to set the padding
+  padding: const UiKitPadding.horizontal16(),
   child: Column(
     children: [
-      // Use UIKitVGap to add vertical space
-      const UIKitVGap.v12(),
-      // Use UIKitText to display text
+      // Use UiKitVGap to add vertical space
+      const UiKitVGap.v12(),
+      // Use UiKitText to display text
       Container(
-        // Use UIKitPadding to set the padding
-        padding: const UIKitPadding.all8(),
+        // Use UiKitPadding to set the padding
+        padding: const UiKitPadding.all8(),
         decoration: BoxDecoration(
           // Use context.customColors to set the color
           color: context.customColors.surface,
-          // Use UIKitBorderRadius to set the border radius
-          borderRadius: const UIKitBorderRadius.v8(),
+          // Use UiKitBorderRadius to set the border radius
+          borderRadius: const UiKitBorderRadius.v8(),
           border: Border.all(
             color: context.customColors.primary,
           ),
         ),
-        child: UIKitText.bodyMedium(
+        child: UiKitText.bodyMedium(
           context,
           'A container with rounded corners',
-          // Use UIKitFontWeight to set the font weight
-          fontWeight: UIKitFontWeight.medium,
+          // Use UiKitFontWeight to set the font weight
+          fontWeight: UiKitFontWeight.medium,
           // Use context.customColors to set the text color
           color: context.customColors.onPrimary,
         ),
@@ -113,10 +113,10 @@ Padding(
             onPressed: () {},
             icon: const Icon(Icons.add),
           ),
-          // Use UIKitHGap to add horizontal space
-          const UIKitHGap.v8(),
-          // Use UIKitText to display text
-          UIKitText.bodyMedium(context, 'Button'),
+          // Use UiKitHGap to add horizontal space
+          const UiKitHGap.v8(),
+          // Use UiKitText to display text
+          UiKitText.bodyMedium(context, 'Button'),
         ],
       ),
     ],
