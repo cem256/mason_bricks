@@ -9,6 +9,7 @@ The set of bricks I use to speed up the development process.
 ## Documentation
 
 - [app_bloc_observer](https://github.com/cem256/mason_bricks/tree/master/bricks/app_bloc_observer)
+- [base_template](https://github.com/cem256/mason_bricks/tree/master/bricks/base_template)
 - [clean_layers](https://github.com/cem256/mason_bricks/tree/master/bricks/clean_layers)
 - [context_extensions](https://github.com/cem256/mason_bricks/tree/master/bricks/context_extensions)
 - [flutter_module](https://github.com/cem256/mason_bricks/tree/master/bricks/flutter_module)

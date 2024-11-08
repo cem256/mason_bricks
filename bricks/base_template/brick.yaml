@@ -1,0 +1,23 @@
+name: base_template
+description: A Flutter app template that includes support for HTTP client, themes, routing, localization, and dependency injection.
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.60 <0.1.0"
+
+vars:
+  project_name:
+    type: string
+    description: Project name
+    default: Base Template
+    prompt: Enter the name of your project
+  description:
+    type: string
+    description: Project description
+    default: A new Flutter project.
+    prompt: Enter the description of your project
+  organization:
+    type: string
+    description: Organization of the project
+    default: com.example
+    prompt: Enter your organization name
