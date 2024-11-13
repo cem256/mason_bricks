@@ -1,8 +1,8 @@
 // ignore_for_file: strict_raw_type
 
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/material.dart';
 import 'package:base_template/core/utils/logger/logger_utils.dart';
+import 'package:flutter/material.dart';
 
 /// Custom route observer that logs all route changes
 final class CustomRouteObserver extends AutoRouteObserver {
