@@ -7,7 +7,7 @@ Future<void> run(HookContext context) async {
 
   final List<String> foldersToRemove = [
     "$projectName/lib/",
-    "$projectName/test/widget_test.dart",
+    "$projectName/test/",
     "$projectName/pubspec.yaml",
     "$projectName/analysis_options.yaml",
     "$projectName/.gitignore",

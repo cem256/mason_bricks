@@ -1,5 +1,5 @@
-import 'package:base_template/app/theme/base/base_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:base_template/app/theme/base/base_theme.dart';
 
 final class DarkTheme extends BaseTheme {
   @override
