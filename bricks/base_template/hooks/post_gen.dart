@@ -21,12 +21,13 @@ Future<void> run(HookContext context) async {
     {"source": "scripts", "destination": "$projectName/"},
     {"source": "pubspec.yaml", "destination": "$projectName/"},
     {"source": "analysis_options.yaml", "destination": "$projectName/"},
-    {"source": "l10n.yaml", "destination": "$projectName/"},
+    {"source": "slang.yaml", "destination": "$projectName/"},
     {"source": ".gitignore", "destination": "$projectName/"},
   ];
 
   await _copyFiles(context, foldersToRemove, filesToCopy);
   await _runFlutterPubGet(context, projectName);
+  await _runL10nScript(context, projectName);
   await _runBuildRunnerScript(context, projectName);
 }
 
@@ -76,6 +77,20 @@ Future<void> _runBuildRunnerScript(HookContext context, String projectName) asyn
     buildRunnerProgress.complete("Build runner script successfully executed!");
   } else {
     buildRunnerProgress.complete("An error occurred on build runner script ${result.stderr.toString()}");
+    exit(exitCode);
+  }
+}
+
+Future<void> _runL10nScript(HookContext context, String projectName) async {
+  final l10nProgress = context.logger.progress("Running l10n script");
+  final result = await Process.start("sh", ["scripts/l10n.sh"], workingDirectory: projectName);
+
+  final exitCode = await result.exitCode;
+
+  if (exitCode == 0) {
+    l10nProgress.complete("L10n script successfully executed!");
+  } else {
+    l10nProgress.complete("An error occurred on l10n script ${result.stderr.toString()}");
     exit(exitCode);
   }
 }
