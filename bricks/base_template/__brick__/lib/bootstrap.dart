@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
 import 'package:{{project_name.snakeCase()}}/app/bloc/app_bloc_observer.dart';
 import 'package:{{project_name.snakeCase()}}/app/environment/app_environment.dart';
 import 'package:{{project_name.snakeCase()}}/app/l10n/generated/strings.g.dart';
@@ -8,7 +7,9 @@ import 'package:{{project_name.snakeCase()}}/core/utils/device_info/device_info_
 import 'package:{{project_name.snakeCase()}}/core/utils/logger/logger_utils.dart';
 import 'package:{{project_name.snakeCase()}}/core/utils/package_info/package_info_utils.dart';
 import 'package:{{project_name.snakeCase()}}/locator.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> bootstrap({required FutureOr<Widget> Function() builder, required AppEnvironment environment}) async {
   FlutterError.onError = (details) {
@@ -22,9 +23,10 @@ Future<void> bootstrap({required FutureOr<Widget> Function() builder, required A
         logEvents: false,
         logTransitions: false,
       );
+      final sharedPreferences = await SharedPreferences.getInstance();
       // Initialize Locator and Utils
       await Future.wait([
-        Locator.locateServices(environment: environment),
+        Locator.locateServices(environment: environment, sharedPreferences: sharedPreferences),
         PackageInfoUtils.init(),
         DeviceInfoUtils.init(),
       ]);
