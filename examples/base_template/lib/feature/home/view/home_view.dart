@@ -3,6 +3,7 @@ import 'package:base_template/app/l10n/extensions/app_l10n_extensions.dart';
 import 'package:base_template/app/theme/cubit/theme_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ui_kit/ui_kit.dart';
 
 @RoutePage()
 class HomeView extends StatelessWidget {
@@ -12,7 +13,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: UIKitText.titleLarge(
+          context,
           context.l10n.flutter,
         ),
         actions: [

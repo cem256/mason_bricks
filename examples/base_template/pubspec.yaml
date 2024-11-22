@@ -12,6 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Custom packages
+  ui_kit:
+    path: ./packages/ui_kit
+
   # Localization
   flutter_localizations:
     sdk: flutter

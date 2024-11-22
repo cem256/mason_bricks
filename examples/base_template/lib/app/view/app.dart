@@ -1,12 +1,12 @@
-import 'package:base_template/app/theme/cubit/theme_cubit.dart';
-import 'package:base_template/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:base_template/app/constants/string_constants.dart';
 import 'package:base_template/app/l10n/generated/strings.g.dart';
 import 'package:base_template/app/router/app_router.dart';
 import 'package:base_template/app/router/custom_route_observer.dart';
+import 'package:base_template/app/theme/cubit/theme_cubit.dart';
 import 'package:base_template/app/theme/dark/dark_theme.dart';
 import 'package:base_template/app/theme/light/light_theme.dart';
+import 'package:base_template/locator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 

@@ -17,6 +17,7 @@ Future<void> run(HookContext context) async {
     {"source": ".vscode", "destination": "$projectName/"},
     {"source": "environment", "destination": "$projectName/"},
     {"source": "lib", "destination": "$projectName/"},
+    {"source": "packages", "destination": "$projectName/"},
     {"source": "assets", "destination": "$projectName/"},
     {"source": "scripts", "destination": "$projectName/"},
     {"source": "pubspec.yaml", "destination": "$projectName/"},
