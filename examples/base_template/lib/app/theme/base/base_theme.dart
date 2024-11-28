@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 abstract class BaseTheme {
   Brightness get brightness;
-  ColorScheme get colorScheme;
+  Iterable<ThemeExtension<dynamic>> get extensions;
 
   ThemeData get theme {
     return ThemeData(
       useMaterial3: true,
       brightness: brightness,
-      colorScheme: colorScheme,
+      extensions: extensions,
       //TODO: Customize widgets here
       typography: Typography.material2021(),
     );

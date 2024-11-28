@@ -1,6 +1,11 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:base_template/app/l10n/cubit/l10n_cubit.dart';
+import 'package:base_template/app/l10n/extensions/l10n_extensions.dart';
+import 'package:base_template/app/l10n/generated/strings.g.dart';
+import 'package:base_template/app/theme/cubit/theme_cubit.dart';
 import 'package:flutter/material.dart';
-import 'package:base_template/app/l10n/l10n.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ui_kit/ui_kit.dart';
 
 @RoutePage()
 class HomeView extends StatelessWidget {
@@ -10,9 +15,40 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          context.l10n.flutter,
+        title: UIKitText.titleLarge(
+          context,
+          context.l10n.hello,
         ),
+        actions: [
+          BlocBuilder<ThemeCubit, ThemeState>(
+            builder: (context, themeState) {
+              return Switch(
+                value: themeState.themeMode == ThemeMode.dark,
+                onChanged: (value) => context.read<ThemeCubit>().setThemeMode(
+                      value ? ThemeMode.dark : ThemeMode.light,
+                    ),
+              );
+            },
+          ),
+          const UIKitHGap.v16(),
+          BlocBuilder<L10nCubit, L10nState>(
+            builder: (context, state) {
+              return DropdownButton<AppLocale>(
+                value: state.locale,
+                items: AppLocale.values
+                    .map(
+                      (e) => DropdownMenuItem<AppLocale>(
+                        value: e,
+                        child: Text(e.name.toUpperCase()),
+                      ),
+                    )
+                    .toList(),
+                onChanged: (value) => context.read<L10nCubit>().setLocale(value!),
+              );
+            },
+          ),
+          const UIKitHGap.v8(),
+        ],
       ),
     );
   }
