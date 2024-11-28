@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:{{project_name.snakeCase()}}/app/l10n/extensions/app_l10n_extensions.dart';
+import 'package:{{project_name.snakeCase()}}/app/l10n/cubit/l10n_cubit.dart';
+import 'package:{{project_name.snakeCase()}}/app/l10n/extensions/l10n_extensions.dart';
+import 'package:{{project_name.snakeCase()}}/app/l10n/generated/strings.g.dart';
 import 'package:{{project_name.snakeCase()}}/app/theme/cubit/theme_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -15,7 +17,7 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: UIKitText.titleLarge(
           context,
-          context.l10n.flutter,
+          context.l10n.hello,
         ),
         actions: [
           BlocBuilder<ThemeCubit, ThemeState>(
@@ -28,6 +30,24 @@ class HomeView extends StatelessWidget {
               );
             },
           ),
+          const UIKitHGap.v16(),
+          BlocBuilder<L10nCubit, L10nState>(
+            builder: (context, state) {
+              return DropdownButton<AppLocale>(
+                value: state.locale,
+                items: AppLocale.values
+                    .map(
+                      (e) => DropdownMenuItem<AppLocale>(
+                        value: e,
+                        child: Text(e.name.toUpperCase()),
+                      ),
+                    )
+                    .toList(),
+                onChanged: (value) => context.read<L10nCubit>().setLocale(value!),
+              );
+            },
+          ),
+          const UIKitHGap.v8(),
         ],
       ),
     );

@@ -16,6 +16,7 @@ class ThemeCubit extends BaseCubit<ThemeState> {
 
   Future<void> init() async {
     final themeMode = _cacheClient.getString(CacheKey.themeMode);
+    if (themeMode == null) return;
     emit(state.copyWith(themeMode: ThemeMode.values.firstWhere((e) => e.name == themeMode)));
   }
 

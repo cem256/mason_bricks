@@ -7,7 +7,7 @@ final class UIKitLightColors implements UIKitColors {
   Color get primary => const Color(0xFF007AFF);
 
   @override
-  Color get onPrimary => Colors.white;
+  Color get onPrimary => Colors.black;
 
   @override
   Color get secondary => const Color(0xFF34C759);
