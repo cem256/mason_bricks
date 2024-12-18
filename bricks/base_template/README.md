@@ -30,7 +30,7 @@ Make sure you have the [mason_cli](https://github.com/felangel/mason/tree/master
 dart pub global activate mason_cli
 ```
 
-First go to the mason_bricks folder on your local machine. Then, add app_bloc_observer to your library.
+First go to the mason_bricks folder on your local machine. Then, add base_template to your library.
 
 ```sh
 mason add -g base_template --path bricks/base_template
