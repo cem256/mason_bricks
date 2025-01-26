@@ -4,6 +4,10 @@
 
 A brick that generates a new Flutter project for you with support for a HTTP client, themes, routing, localization, and dependency injection.
 
+## Compatibility
+
+Tested on Flutter 3.27.3
+
 ## Brick Uses:
 - A customizable uikit package that helps you build consistent user interfaces with predefined components and layout utilities.
 - [dio](https://pub.dev/packages/dio) as an HTTP client
@@ -14,6 +18,7 @@ A brick that generates a new Flutter project for you with support for a HTTP cli
 - [freezed](https://pub.dev/packages/freezed) for generating immutable data classes
 - [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management
 - [slang](https://pub.dev/packages/slang) for localization
+- [flutter_gen](https://pub.dev/packages/flutter_gen) for generating assets
 - [very_good_analysis](https://pub.dev/packages/very_good_analysis) for lint rules
 
 ## Project Structure

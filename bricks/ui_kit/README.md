@@ -4,6 +4,10 @@
 
 A brick that generates a Flutter package to help build consistent user interfaces with predefined components and layout utilities.
 
+## Compatibility
+
+Tested on Flutter 3.27.3
+
 ## Variables ✨
 
 | Variable       | Description                       | Default        | Type     |
