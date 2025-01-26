@@ -3,7 +3,7 @@ description: A brick that generates data, domain and presentation layers for cle
 version: 0.2.0+2
 
 environment:
-  mason: ^0.1.0-dev.52
+  mason: ^0.1.0
 
 vars:
   feature_name:

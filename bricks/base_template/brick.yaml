@@ -3,7 +3,7 @@ description: A Flutter app template that includes support for HTTP client, theme
 version: 0.1.0+1
 
 environment:
-  mason: ">=0.1.0-dev.60 <0.1.0"
+  mason: ^0.1.0
 
 vars:
   project_name:
