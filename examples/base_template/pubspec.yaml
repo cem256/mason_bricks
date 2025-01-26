@@ -62,7 +62,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   # Linter
-  very_good_analysis: ^6.0.0
+  very_good_analysis: ^7.0.0
 
   # Code Generation
   freezed: ^2.5.7
