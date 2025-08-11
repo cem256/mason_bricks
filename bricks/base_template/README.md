@@ -18,7 +18,6 @@ Tested on Flutter 3.27.3
 - [freezed](https://pub.dev/packages/freezed) for generating immutable data classes
 - [flutter_bloc](https://pub.dev/packages/flutter_bloc) for state management
 - [slang](https://pub.dev/packages/slang) for localization
-- [flutter_gen](https://pub.dev/packages/flutter_gen) for generating assets
 - [very_good_analysis](https://pub.dev/packages/very_good_analysis) for lint rules
 
 ## Project Structure

@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  skeletonizer: ^1.4.2
+  skeletonizer: ^2.1.0+1
   flutter_svg: ^2.0.10+1
 
 dev_dependencies:
@@ -17,7 +17,7 @@ dev_dependencies:
     sdk: flutter
 
   #Linter
-  very_good_analysis: ^7.0.0
+  very_good_analysis: ^9.0.0
 
 flutter:
   uses-material-design: true

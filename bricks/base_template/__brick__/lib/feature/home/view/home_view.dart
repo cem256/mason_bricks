@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:{{project_name.snakeCase()}}/app/generated/assets.gen.dart';
+import 'package:{{project_name.snakeCase()}}/app/constants/asset_constants.dart';
 import 'package:{{project_name.snakeCase()}}/app/l10n/cubit/l10n_cubit.dart';
 import 'package:{{project_name.snakeCase()}}/app/l10n/extensions/l10n_extensions.dart';
 import 'package:{{project_name.snakeCase()}}/app/l10n/generated/strings.g.dart';
@@ -18,12 +18,7 @@ class HomeView extends StatelessWidget {
       appBar: const _HomeAppBar(),
       body: Padding(
         padding: const UIKitPadding.all16(),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Assets.icons.flutter.image(),
-          ],
-        ),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [Image.asset(AssetConstants.flutterIcon)]),
       ),
     );
   }
@@ -35,18 +30,13 @@ class _HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: UIKitText.titleLarge(
-        context,
-        context.l10n.hello,
-      ),
+      title: UIKitText.titleLarge(context, context.l10n.hello),
       actions: [
         BlocBuilder<ThemeCubit, ThemeState>(
           builder: (context, themeState) {
             return Switch(
               value: themeState.themeMode == ThemeMode.dark,
-              onChanged: (value) => context.read<ThemeCubit>().setThemeMode(
-                    value ? ThemeMode.dark : ThemeMode.light,
-                  ),
+              onChanged: (value) => context.read<ThemeCubit>().setThemeMode(value ? ThemeMode.dark : ThemeMode.light),
             );
           },
         ),
@@ -56,12 +46,7 @@ class _HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             return DropdownButton<AppLocale>(
               value: state.locale,
               items: AppLocale.values
-                  .map(
-                    (e) => DropdownMenuItem<AppLocale>(
-                      value: e,
-                      child: Text(e.name.toUpperCase()),
-                    ),
-                  )
+                  .map((e) => DropdownMenuItem<AppLocale>(value: e, child: Text(e.name.toUpperCase())))
                   .toList(),
               onChanged: (value) => context.read<L10nCubit>().setLocale(value!),
             );
