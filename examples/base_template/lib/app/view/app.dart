@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:base_template/app/constants/asset_constants.dart';
 import 'package:base_template/app/constants/string_constants.dart';
 import 'package:base_template/app/l10n/cubit/l10n_cubit.dart';
 import 'package:base_template/app/l10n/generated/strings.g.dart';
@@ -20,16 +21,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => ThemeCubit(
-            cacheClient: Locator.cacheClient,
-          )..init(),
-        ),
-        BlocProvider(
-          create: (context) => L10nCubit(
-            cacheClient: Locator.cacheClient,
-          )..init(),
-        ),
+        BlocProvider(create: (context) => ThemeCubit(cacheClient: Locator.cacheClient)..init()),
+        BlocProvider(create: (context) => L10nCubit(cacheClient: Locator.cacheClient)..init()),
       ],
       child: BlocBuilder<L10nCubit, L10nState>(
         builder: (context, l10nState) {
@@ -51,9 +44,7 @@ class App extends StatelessWidget {
                 localizationsDelegates: GlobalMaterialLocalizations.delegates,
 
                 // Routing
-                routerConfig: _appRouter.config(
-                  navigatorObservers: () => [CustomRouteObserver()],
-                ),
+                routerConfig: _appRouter.config(navigatorObservers: () => [CustomRouteObserver()]),
               );
             },
           );
