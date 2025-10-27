@@ -46,7 +46,12 @@ class _HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             return DropdownButton<AppLocale>(
               value: state.locale,
               items: AppLocale.values
-                  .map((e) => DropdownMenuItem<AppLocale>(value: e, child: Text(e.name.toUpperCase())))
+                  .map(
+                    (e) => DropdownMenuItem<AppLocale>(
+                      value: e,
+                      child: UIKitText.bodyMedium(context, e.name.toUpperCase()),
+                    ),
+                  )
                   .toList(),
               onChanged: (value) => context.read<L10nCubit>().setLocale(value!),
             );

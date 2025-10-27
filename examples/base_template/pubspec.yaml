@@ -95,5 +95,6 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/fonts/
     - assets/icons/
     - assets/icons/app_icon/

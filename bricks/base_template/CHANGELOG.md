@@ -1,3 +1,6 @@
+# 0.3.1+4
+- Added UIKitText.bodyMedium for dropdown menu item text
+
 # 0.3.0+3
 - Bumped Flutter version to 3.32.8
 - Bumped dependencies
